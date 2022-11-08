@@ -16,3 +16,9 @@ const AppRouter = () => {
         </BrowserRouter>
     );
 };
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps)(AppRouter);
